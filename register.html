@@ -16,7 +16,7 @@
         <div class="container">
             <h1>Register</h1>
 
-            <div class="Firstfields">
+            <div class="firstfields show">
 
                 <div class="username field">
                     <label for="username">Username:</label>
@@ -32,9 +32,32 @@
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" placeholder="•••••••"</input>
                 </div>
+
+                <button id="nextBtn">Submit</button>
             </div>
 
-            <button>Submit</button>
+            <div class="secondFields hide">
+
+                <div id="profilePictureField" class="field">
+                    <img id="profilePictureDisplay" src="avatar.png">
+                    <input type="file" id="profile_picture" name="profile_picture" accept="image/*">
+                </div>
+    
+                <div class="dob field">
+                    <label for="dob">Date of birth: </label>
+                    <input type="date" id="dob" name="dob" placeholder="eg: 08/06/2001"</input>
+                </div>
+
+                <div class="bio field">
+                    <label for="bio">Bio:</label>
+                    <textarea placeholder="Introduce yourself..."></textarea>
+                </div>
+
+                <div class="btns">
+                    <button type="submit">Submit</button>
+                    <button id="backBtn">Back</button>
+                </div>
+            </div>
 
             <div class="loginRedirect">
                 <p>Already have an account?</p>
@@ -42,5 +65,6 @@
             </div>
         </div>
     </main>
+    <script src="script/register.js"></script>
 </body>
 </html>

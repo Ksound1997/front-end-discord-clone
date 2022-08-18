@@ -13,13 +13,13 @@ main {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     width: 400px;
     height: max-content;
 }
 
 .container h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -43,22 +43,41 @@ main {
     outline: none;
 }
 
-.Firstfields {
+.firstfields, .secondFields {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    display: none;
+}
+
+.secondFields {
+    display: flex !important;
+    /* display: none; */
+    gap: 8px !important;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 button {
     width: 130px;
     color: white;
     font-weight: 600;
-    margin: 0 auto;
+    margin: 12px auto 0 auto;
     border-radius: 10px;
     border: none;
     background-color: #282828;
     padding: 8px 32px;
     transition: all 0.3s;
+}
+
+.btns > button {
+    margin: 0 auto !important;
+    width: max-content;
+    height: max-content;
 }
 
 button:hover, .loginRedirect a:hover {
@@ -101,4 +120,39 @@ button:hover, .loginRedirect a:hover {
         padding: 32px;
 
     }
+}
+
+#profilePictureField {
+    gap: 4px;
+}
+
+#profilePictureField img {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #430E78;
+    object-fit: cover;
+}
+
+textarea {
+    height: 170px;
+    padding: 8px;
+    background-color: #282828;
+    border: none;
+    max-width: 100%;
+    border-radius: 10px;
+    color: #c2c2c2;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+.hide {
+    display: none !important;
 }

@@ -50,10 +50,22 @@ main {
     display: none;
 }
 
+.firstfields {
+    gap: 0px;
+}
+
 .secondFields {
     display: flex !important;
     /* display: none; */
     gap: 8px !important;
+}
+
+.err {
+    font-size: .7rem;
+    color: red;
+    font-weight: 600;
+    margin-left: 8px;
+    visibility: hidden;
 }
 
 .btns {
@@ -82,6 +94,17 @@ button {
 
 button:hover, .loginRedirect a:hover {
     transform: scale(1.1);
+}
+
+
+input::file-selector-button {
+    font-weight: 500;
+    color: #c2c2c2;
+    padding: 0.5em;
+    background-color: #430E78;
+    border: thin solid #282828;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .loginRedirect {

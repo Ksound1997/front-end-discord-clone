@@ -13,7 +13,8 @@
 </head>
 <body>
     <main>
-        <div class="container">
+        <form method="post" name="register-form" class="container" action="">
+
             <h1>Register</h1>
 
             <div class="firstfields show">
@@ -21,16 +22,20 @@
                 <div class="username field">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" placeholder="eg: JohnDoe"</input>
+                    <p id="usernameErr" class="err">error</p>
+
                 </div>
     
                 <div class="email field">
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email" placeholder="eg: JohnDoe@gmail.com"</input>
+                    <p id="emailErr" class="err">error</p>
                 </div>
 
                 <div class="password field">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" placeholder="•••••••"</input>
+                    <p id="passwordErr" class="err">error</p>
                 </div>
 
                 <button id="nextBtn">Submit</button>
@@ -46,6 +51,7 @@
                 <div class="dob field">
                     <label for="dob">Date of birth: </label>
                     <input type="date" id="dob" name="dob" placeholder="eg: 08/06/2001"</input>
+                    <p id="dobErr" class="err"></p>
                 </div>
 
                 <div class="bio field">
@@ -53,8 +59,9 @@
                     <textarea placeholder="Introduce yourself..."></textarea>
                 </div>
 
+                <p id="lastErrField" class="err">Main ErrField</p>
                 <div class="btns">
-                    <button type="submit">Submit</button>
+                    <button id="submitBtn">Submit</button>
                     <button id="backBtn">Back</button>
                 </div>
             </div>
@@ -63,7 +70,7 @@
                 <p>Already have an account?</p>
                 <a href="">Login</a>
             </div>
-        </div>
+        </form>
     </main>
     <script src="script/register.js"></script>
 </body>
